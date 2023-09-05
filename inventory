@@ -7,9 +7,10 @@ roboshop-us-dev-db-mongodb-01.saidev.world
 roboshop-us-dev-db-mongodb-02.saidev.world
 roboshop-us-dev-db-mongodb-03.saidev.world
 
-[mysql:children]
+[db:children]
 radis
 rabbitmq
+mysql
 
 
 
