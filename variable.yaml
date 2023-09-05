@@ -1,8 +1,8 @@
 - name: varaible in yaml script
   hosts: mongodb
   vars:
-  course: Devops
-  attendee: sai kumar
+    course: Devops
+    attendee: sai kumar
   
   tasks:
     - name: variables
