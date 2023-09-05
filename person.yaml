@@ -1,0 +1,29 @@
+- name: saikumar
+  DOB: 01-01-01
+  address:
+    city: hyderabad
+    country: IND
+    street: rja
+  addresses:
+- type: perm
+  city: hyd
+  country: IND
+- type: curr
+  city: gvd
+  country: USA
+
+  # 2nd person
+
+- name: venkat
+  DOB: 01-01-01
+  address:
+    city: hyderabad
+    country: IND
+    street: rja
+  addresses:
+- type: perm
+  city: hyd
+  country: IND
+- type: curr
+  city: gvd
+  country: USA
