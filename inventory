@@ -1,0 +1,15 @@
+
+[mongodb]
+roboshop-us-dev-db-mongodb-01.saidev.world
+
+[cart]
+roboshop-us-dev-db-mongodb-01.saidev.world
+roboshop-us-dev-db-mongodb-02.saidev.world
+roboshop-us-dev-db-mongodb-03.saidev.world
+
+[mysql:children]
+radis
+rabbitmq
+
+
+
