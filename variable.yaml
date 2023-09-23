@@ -9,7 +9,10 @@
       ansible.builtin.debug: # to run the inputs
         msg: "hello world"
 
-    - name: print vaiable
+    - name: print variable
       ansible.builtin.debug:
         msg: "hello im learing {{course}}, attandee is {{attendee}}"
+
+
+
 

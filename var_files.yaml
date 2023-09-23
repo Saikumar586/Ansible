@@ -1,0 +1,14 @@
+- name: calling varibles
+  host: localhost #managing 
+  ansible.builtin.include_vars:
+  file: variable.yaml
+  name: variablefile
+  tasks:
+- name: variable printing
+  ansible.builtin.debug:
+     msg: "hello im learing {{course}}, attandee is {{attendee}}"
+  
+
+
+
+  

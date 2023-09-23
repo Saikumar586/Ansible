@@ -10,3 +10,15 @@
     ansible.builtin.service:
       name: nginx
       state: started
+
+
+# - name: nginx server install
+#   host: nginx
+#   become: true
+#   tasks:
+#   - name: nginx
+#     ansible.builtin.yum:
+#     state: installed
+#     ansible.buitin.services:
+#     - name: nginx
+#       state: started
