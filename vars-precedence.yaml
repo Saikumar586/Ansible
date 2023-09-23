@@ -3,7 +3,7 @@
   vars: 
     NAME: saikumar
   vars-files:
-    variables.yaml
+  - variables.yaml
   vars-prompt:
   - name: NAME
     Prompt: pls enter name
