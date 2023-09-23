@@ -4,6 +4,6 @@
    - name: USERNAME
      promt: enter the value
      private: false # to read the input value in screen.
-  - name: PASSWORD
-    prompt: enter password as DevOps321
-    private: false
+   - name: PASSWORD
+     prompt: enter password as DevOps321
+     private: false
