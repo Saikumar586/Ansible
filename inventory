@@ -2,6 +2,10 @@
 [mongodb]
 roboshop-us-dev-db-mongodb-01.saidev.world
 
+[mongodb:vars]
+MONGO_USER=mongoadmin
+MONGO_DB=ADMIN
+ 
 
 [cart]
 roboshop-us-dev-db-cart-01.saidev.world
@@ -17,7 +21,7 @@ roboshop-us-dev-db-user-02.saidev.world
 
 [db:children]
 mysql
-rabbitmq
+mongodb
 
 [app:children]
 cart
