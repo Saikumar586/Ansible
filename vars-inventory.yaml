@@ -3,4 +3,4 @@
   tasks:
   - name: get value form inventory
     ansible.builtin.debug:
-      msg: "mongo {{MONGO_USER}}"
+      msg: "mongo: {{MONGO_USER}}"
