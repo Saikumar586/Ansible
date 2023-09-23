@@ -2,7 +2,7 @@
    hosts: local host
    vars_prompt:
    - name: USERNAME
-     promt: enter the value
+     prompt: enter the value
      private: false # to read the input value in screen.
    - name: PASSWORD
      prompt: enter password as DevOps321
