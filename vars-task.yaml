@@ -6,7 +6,7 @@
   tasks:
   - name:  at task level
     money: 200cr
-    land: 10acres
+    houses: 10
     ansible.builtin.debug:
-      msg: "{{money}},{{home}} "
+      msg: "{{money}},{{land}},{{houses}} "
   
