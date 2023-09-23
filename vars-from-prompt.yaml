@@ -8,5 +8,5 @@
      prompt: enter password as DevOps321
      private: false
  -  name: printng
-    ansible.builtin.debug:
-      msg: "course {{course}} {{attendee}} {{duration}}"
+     ansible.builtin.debug:
+       msg: "course {{course}} {{attendee}} {{duration}}"
