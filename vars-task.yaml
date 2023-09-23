@@ -1,0 +1,11 @@
+- name: variables at task level
+  hosts: localhost
+  property: 100acr
+  home: land
+tasks:
+- name:  at task level
+  property: 200acr
+  home: land
+  ansible.builtin.debug:
+    msg: "{{property}},{{home}}"
+  
