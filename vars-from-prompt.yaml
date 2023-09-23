@@ -1,6 +1,6 @@
  - name: promt response in ansible
    hosts: local host
-   vars_file:
+   vars_files:
    - variables.yaml
    vars_prompt:
    - name: USERNAME
