@@ -1,15 +1,15 @@
  - name: promt response in ansible
-   hosts: local host
-   vars_files:
-   - variables.yaml
+   hosts: localhost
+  #  vars_files:
+  #  - variables.yaml
    vars_prompt:
    - name: USERNAME
      prompt: enter the value
      private: false # to read the input value in screen.
    - name: PASSWORD
      prompt: enter password as DevOps321
-     private: false
+     private: True
    tasks:
    - name: printng
      ansible.builtin.debug:
-       msg: "course {{course}} {{attendee}} {{duration}}"
+       msg: "course {{course}}, {{attendee}}, {{duration}}"
