@@ -5,6 +5,7 @@ roboshop-us-dev-db-mongodb-01.saidev.world
 [mongodb:vars]
 MONGO_USER=mongoadmin
 MONGO_DB=ADMIN
+NAME=Saikumar
  
 
 ;; [cart]

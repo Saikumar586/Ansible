@@ -1,0 +1,14 @@
+- name: check varaible level which preferring first
+  hosts: mongodb
+  vars: 
+    NAME: saikumar
+  vars-file:
+    variable.yaml
+  vars-prompt:
+  - name: NAME
+    Prompt: pls enter name
+    private: false
+  tasks: 
+  - name: variable task level
+    ansible.builtin.debug:
+      msg: "trainer name: {{NAME}}"

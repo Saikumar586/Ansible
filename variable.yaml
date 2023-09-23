@@ -2,7 +2,7 @@
   hosts: mongodb
   vars:
     course: Devops
-    attendee: sai kumar
+    NAME: saikumar-var
   
   tasks:
     - name: variables
