@@ -7,7 +7,7 @@
   - name:  at task level
     vars:
     - money: "200cr"
-      land: "20acrs"
+      house: 10
     ansible.builtin.debug:
       msg: "{{money}},{{land}},{{houses}} "
   
