@@ -1,17 +1,17 @@
-- name: varaible in yaml script
-  hosts: mongodb
-  vars:
-    course: Devops
-    attendee: sai kumar
+# - name: varaible in yaml script
+#   hosts: mongodb
+#   vars:
+#     course: Devops
+#     attendee: sai kumar
   
-  tasks:
-    - name: variables
-      ansible.builtin.debug: # to run the inputs
-        msg: "hello world"
+#   tasks:
+#     - name: variables
+#       ansible.builtin.debug: # to run the inputs
+#         msg: "hello world"
 
-    - name: print variable
-      ansible.builtin.debug:
-        msg: "hello im learing {{course}}, attandee is {{attendee}}"
+#     - name: print variable
+#       ansible.builtin.debug:
+#         msg: "hello im learing {{course}}, attandee is {{attendee}}"
 
 
 
