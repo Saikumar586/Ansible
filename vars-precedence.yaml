@@ -2,8 +2,8 @@
   hosts: mongodb
   vars: 
     NAME: saikumar
-  vars-file:
-    variable.yaml
+  vars-files:
+    variables.yaml
   vars-prompt:
   - name: NAME
     Prompt: pls enter name
