@@ -1,8 +1,7 @@
 - name: calling varibles
   host: localhost #managing 
-  ansible.builtin.include_vars:
-  file: variable.yaml
-  name: variablefile
+  var_files:
+  - variable.yaml
   tasks:
 - name: variable printing
   ansible.builtin.debug:
