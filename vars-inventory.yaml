@@ -1,6 +1,6 @@
 - name: vars reffering inventory
   hosts: mongodb
-tasks:
+  tasks:
   - name: get value form inventory
     ansible.builtin.debug:
       msg: "mongo {{MONGO_USER}}"
