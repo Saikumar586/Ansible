@@ -1,7 +1,7 @@
 - name: calling varibles
   host: localhost #managing 
   var_files:
-  - variables.yaml
+  - H:\devopstools\repos\ansible\variables.yaml
   tasks:
 - name: variable printing
   ansible.builtin.debug:
