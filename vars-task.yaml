@@ -1,9 +1,10 @@
 - name: variables at task level
   hosts: localhost
-  money: 100cr
-  land: 10acres
+  vars:
+  - money: 100cr
+    land: 10acres
   tasks:
--   name:  at task level
+  - name:  at task level
     money: 200cr
     land: 10acres
     ansible.builtin.debug:
