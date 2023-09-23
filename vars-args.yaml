@@ -3,4 +3,4 @@
   tasks:
   - name: arg level
     ansible.builtin.debug:
-      msg: " passing variable over cmd {{COURSE}}"
+      msg: " passing variable over cmd : {{COURSE}}"
