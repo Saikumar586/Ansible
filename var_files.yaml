@@ -1,5 +1,5 @@
 - name: calling varibles
-  host: localhost #managing 
+  hosts: localhost #managing 
   var_files:
   - H:\devopstools\repos\ansible\variables.yaml
   tasks:
