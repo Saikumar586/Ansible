@@ -1,6 +1,6 @@
 
-;;[mongodb]
-;;roboshop-us-dev-db-mongodb-01.saidev.world
+[mongodb]
+roboshop-us-dev-db-mongodb-01.saidev.world
 
 [mongodb:vars]
 MONGO_USER=mongoadmin

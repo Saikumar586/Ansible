@@ -1,0 +1,6 @@
+- name : passing value in command line
+  hosts: localhost
+  tasks:
+  - name: arg level
+    ansible.builtin.debug:
+      msg: " passing variable over cmd {{COURSE}}"
