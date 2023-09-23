@@ -7,6 +7,8 @@
    - name: PASSWORD
      prompt: enter password as DevOps321
      private: false
+    vars_file:
+    -  variables.yaml
  -  name: printng
      ansible.builtin.debug:
        msg: "course {{course}} {{attendee}} {{duration}}"
