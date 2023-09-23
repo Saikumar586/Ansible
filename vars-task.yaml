@@ -9,5 +9,5 @@
     - money: "200cr"
       house: 10
     ansible.builtin.debug:
-      msg: "{{money}},{{land}},{{houses}} "
+      msg: "{{money}},{{land}},{{house}} "
   
