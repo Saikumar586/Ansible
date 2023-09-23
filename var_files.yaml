@@ -1,11 +1,11 @@
 - name: calling varibles
   host: localhost #managing 
   var_files:
-  - variable.yaml
+  - variables.yaml
   tasks:
 - name: variable printing
   ansible.builtin.debug:
-     msg: "hello im learing {{course}}, attandee is {{attendee}}"
+     msg: "hello im learing {{course}}, attandee is {{attendee}} and duration is {{duration}}"
   
 
 

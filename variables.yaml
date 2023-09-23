@@ -1,0 +1,4 @@
+- name: variables
+  course: devops
+  attendee: sai
+  duration: 120
