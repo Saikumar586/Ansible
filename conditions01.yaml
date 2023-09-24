@@ -1,0 +1,20 @@
+- name: Conditional 
+  hosts: localhost
+  tasks:
+  - name: condition check in ansible using "when" keyword
+    # if no module avail to run linux command in that case use ansible builtin command.
+    ansible.builtin.command: id roboshop
+    register: output # regiester means output
+    ignore_errors: true
+
+  - name: print the cmd output
+    ansible.builtin.debug:
+     msg: "output is {{output}}"
+  - name: print the exit status
+    ansible.builtin.debug:
+     msg: "output is {{output.rc}}"  # based on output rc will get to know user exist ot not so frst execute output.
+  - name: check user exist or not
+    become: true #to check user sudo access required 
+    ansible.builtin.user:
+      name: roboshop
+    when: output.rc != 0 

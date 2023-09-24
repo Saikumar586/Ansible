@@ -1,0 +1,42 @@
+#data types are 
+# 1.number
+# 2.string
+# 3.list
+# 4.boolean
+# 5.map
+
+
+- name: Using Data types Yaml
+  hosts: localhost
+#number
+vars:
+- AGE: 25
+- Name: "sai"
+- isDevops: true
+- skills:
+  - Devops
+  - AWS
+  - Terraform
+  - Docker
+- Experiance:
+  - Devops: 2
+  - AWS: 1
+  - Docker: 3
+tasks:
+  - name: printing Number
+    ansible.builtin.debug:
+      msg: "{{AGE}}"
+  - name: printing string
+    ansible.builtin.debug:
+      msg: "{{Name}}"
+  - name: printing boolean
+    ansible.builtin.debug:
+      msg: "{{isDevops}}"
+  - name: printing list
+    ansible.builtin.debug:
+      msg: "{{skills}}"
+  - name: printing map
+    ansible.builtin.debug:
+      msg: "{{Experiance}}"
+    
+

@@ -1,14 +1,27 @@
 - name: check varaible level which preferring first
   hosts: mongodb
-    vars: 
-      NAME: saikumar
-    vars-files:
-    - variables.yaml
-    vars-prompt:
-    - name: NAME
-      Prompt: pls enter name
-      private: false
+  vars: 
+    NAME: saikumar
+    ignore_unreachable: true
+  vars_files:
+  - variables.yaml
+  vars_prompt:
+  - name: NAME
+    prompt: pls enter name
+    private: false
   tasks: 
   - name: variable task level
+    vars:
+      NAME:saikumar
     ansible.builtin.debug:
-        msg: "trainer name: {{NAME}}"
+      msg: "trainer name: {{NAME}}"
+     ignore_unreachable: true
+
+
+      # 1.command line
+      # 2.task level
+      # 3.varslevel
+      # 4.prompt
+      # 5.play
+      # 6. inventory level.
+      # 7.roles

@@ -1,0 +1,37 @@
+- name: take username and check dynamically user exist or not if not create
+  hosts: localhost
+  ignore_errors: true
+  tasks:
+    vars_prompt:
+    - name: USER_NAME
+    ansible.builtin.user:
+      prompt: enter user name
+      register: output
+      ansible.builtin.debug:
+        msg: "{{output}}"
+      ansible.builtin.debug:
+        msg: "{{output.rc}}"
+      when: output.rc != 0
+    # tasks:
+    #   ansible.builtin.command: 
+#check directory exist or not if not create.
+
+
+- name: check if the directory exists
+  hosts: all
+  become: false
+  vars:
+    directory: "/tmp"
+  tasks:
+    - name: Check if the directory exists
+      ansible.builtin.stat:
+        path: "{{ directory }}"
+      register: dir_to_check
+
+    - name: Directory found
+      ansible.builtin.debug:
+        msg: "Directory {{ directory }} present"
+      when: dir_to_check.stat.isdir is defined and dir_to_check.stat.isdir
+    
+  
+  

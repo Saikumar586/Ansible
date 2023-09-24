@@ -1,0 +1,12 @@
+- name: loops in yaml
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: installing multiple serveres
+    ansible.builtin.yum:
+      name: {{item}}
+      state: installed
+    loop:
+    - nginx
+    - mongodb
+    - redies

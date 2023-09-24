@@ -1,0 +1,15 @@
+- name: advanced loops in yaml
+  hosts: mongodb
+  become: yes
+  tasks:
+  - name: installing multiple serveres
+    ansible.builtin.yum:
+      name: "{{item.name}}"
+      state: "{{item.state}}"
+    loop: #list of map
+      {name: 'nginx', state: 'absent'}
+      {name: 'mongodb', state: 'installed'}
+
+
+
+
